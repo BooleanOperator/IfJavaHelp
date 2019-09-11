@@ -1,0 +1,206 @@
+IF STATEMENTS: 
+if you are looking at this, you probably are looking for an eclipse like structure, refreshing your knowledge because you havent written simple syntax's in a while, or learning java! (Hey CSA people!) 
+////////////////////////////////////////////////////////////////////////////////////
+So here is a basic structure: 
+  if( data > value  (operator) data > value)
+    return "example";
+  return "this is a closing return if nothing else works it runs this line"
+x1//////////////////////////////////////////////////////////////////////////////////
+Example One: (Here is a broad statement which almost fits with anything basic for an if then statement, this is one of the basic statements, where it is running through a sequence, which can be combined down but is not.)
+Here is an example of an if then statement with two values. These values can be either an int=integer, boolean=boolean, and/or a double=double. Your data values should always be declared beforehand, as it will not work without it being declared. 
+  if (boolean1) {
+    if(data2 >= num){    - i put >= but this can be exchanged with any symbol like ( >=, <=, +, -, >, <, %, *) 
+      return true;         -you can return true or false here 
+    }
+    else{                  -here i insert the else condition, so if it doesnt fall within the first code, it goes here. 
+      return false;                   -you can return true or false here
+    }
+  }
+  else{                               -here i insert the else condition, so if it doesnt fall within the first code, it goes here. 
+    if(data2 >= num && data2 <=num){  -the && can be replaced with ( &&, ||) (AND/OR)
+      return true;
+  }
+  else{
+    return false;
+  }
+}
+}
+x2/////////////////////////////////////////////////////////////////////
+Example 2: (a more simplified version, (also quicker!!!)) *May Not Work with everything!*
+
+  if(data1 <= num || data2 <= num)
+   return num0;
+  else if(data1 >= num || data2 >= num)
+   return num1;
+  else
+   return num2;
+}
+As you saw above, there are less lines of code, and less brackets. This allows for a simpler and cleaner looking code for debugging. 
+x3/////////////////////////////////////////////////////////////////////
+Example 3: Here is a somewhat complex version, (but not to complex!)
+ if(boolean){
+   if(data<=num3 && data>=num1)
+    return true(false);
+  }
+  else if(data>=num1 && data<=num2)
+    return true;
+return false;
+}
+
+OR:
+---------------
+x4
+EX:4
+if(boolean){
+   if(data1<=num)
+    return num0;
+   else if(data2>=num && data3<=num)
+    return num1;
+   else
+    return num2;
+  }
+   if(boolean){
+  if(data2<=num)
+   return 0;
+  else if(data3>=num && data3<=num)
+   return num1;
+  else
+   return num2; - you would do this becuase if it basically acts like a safety net for everything. 
+ }
+return num2;
+
+}
+remember with booleans it is !=negative or not!
+  ^thats a shortcut!
+x5//////////////////////////////////////////////////////////////////////
+Example 5: When you add things in if then statements:
+SUPER SIMPLE:
+  if(data1+data2>=num && data1+data2<=num2)
+   return num/val;
+  else
+   return data1+data2;  - you would do this because it would run this if nothing above this runs. 
+}
+x6///////////////////////////////////////////////
+Example 6: Simple Boolean Uses
+  if(boolean){
+   if(int>=num && int<=num)
+    return "num";
+   else
+    return "other";
+  }
+  if(!boolean){
+  if(int>=num && int<=num)
+   return "value";
+  else 
+   return "value";
+}
+return "value";
+}
+ x7//////////////////////////////////////////////////////////////////////////
+Example: Introducing Math. functions.... in a boolean
+Lets make this a little more complicated: 
+since this is a boolean, it is either true or false, 
+and basically all the numbers are the same, like A=1 and B=1 which means you have to introduce the new math function!!!! 
+
+  if(ValueA ==Num || valueB ==Num ||ValueA + ValueB ==Num|| Math.abs(ValueA-ValueB)==Num)
+   return true(or false);
+  else
+   return false(opposite of above);
+}
+x8 ////////////////////////////////////////////////////////////////////////
+ Here is an example of if you have a value and it has to be within a range, but also outside that range.
+  if(boolean){
+   if(data<=num1 ||(&&) data>=num2) -make sure signs are flipped 
+    return true(false);
+   else
+    return false(opposite);
+  }
+  if(data>=num1 &&(||) data<=num2) -you can flip signs, whatever you want your problem to do....
+   return true(false);
+  else
+   return false(opposite);
+}
+
+x9 ///////////////////////////////////////////////////////////////////
+ Here we bring in our good ole friend MODULUS!!! in our boolean expression/statement
+  if(data%value==answerA || data%value2==answerB)
+   return true;
+  else 
+   return false;
+}
+x3 (x10) /////////////////////////////////////////////////////////////////////////////
+Here we build off the previous question: 
+Keep in mind all of this is answering to AnswerA, but with the second else if statement it is OR not AND. || not &&
+  if(data%value==AnswerA && data%value==AnswerA)
+   return false(true);
+  else if(data%value==AnswerA || data%value==AnswerA)
+   return true(false);
+  else
+   return false(opposite);
+}
+x11///////////////////////////////////////////////////////////////////////////
+Lisiting with Modulous Division: Sometimes >,< wont work, so you can always list!
+  if(Data%num==Answer0 || Data%num==Answer1||Data%num==Answer2||Data%num==Answer3||Data%num==Answer4)
+   return true(false);
+  else
+   return false(opposite);
+}
+X12 ///////////////////////////////////////////////////////////////////////////
+ here i show how you can compare two data types within a certain range:
+  if(DataA>=value1 && DataA<=value10 || DataB>=value1 && DataB<=value10)
+   return value;
+  else
+   return DataA+(-,*,/,%)DataB;
+}
+ X13/////////////////////////////////////////////////////////////////////////
+time to keep things simple again. when you have more than one boolean.... 
+if(boolean1 && boolean2 && !boolean3)
+   return true;
+  else if(!boolean3 && !boolean1)
+   return true;
+  else
+   return false;
+}
+yes, sometimes... its that simple.
+X14 ////////////////////////////////////////////////////////////////////////////
+ OTHER STATEMENTS THAT HELP ME, THAT MAY HELP YOU!:
+  if(A<N || B <N)
+   return N;
+  if(A>= B*N|| B>= A*(Operations)N)
+   return N2;
+  else if(A >= N && B >=N)
+   return N1;
+  else
+   return N;
+}
+X15///////////////////////
+  if(NA+NB==NC || NB+NC==NA || NC+NA=(you can have two =)NB)
+   return true;
+  else
+   return false;
+}
+
+X16////////////////////////////
+3 Data Types and a Boolean:
+
+  if(boolean &&(||) DataC>DataB)
+   return true;
+  else if(!boolean &&(||) DataB>DataA(reverse) && DataC>DataB)
+   return true;
+  else
+   return false;
+}
+X17///////////////////////////
+This is what you will use when you have to find the last digit using modulous and or!
+  if(DigitA%Num==DigitB%Num ||DigitA%Num==DigitC%Num||DigitB%Num==DigitC%Num)
+   return true;
+  else
+   return false;
+}
+
+
+
+Thanks for using this helpful handout. 
+Make sure to go take a look at my other work. 
+Thanks!!
+Boolean.
